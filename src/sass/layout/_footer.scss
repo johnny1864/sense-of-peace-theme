@@ -1,0 +1,82 @@
+.gfooter {
+    color: $white;
+    background-color: $teal;
+
+    &__content {
+        color: $white;
+    }
+
+    &__content,
+    &__bottom {
+        padding: 2rem 1.5rem;
+        overflow: hidden;
+    }
+
+    &__bottom {
+        padding: 1rem 1.5rem;
+        font-size: .9rem;
+        background-color: $footer_bottom;
+        color: $teal;
+
+        p {
+            margin: 0.5rem;
+        }
+
+        .social-links {
+            margin-bottom: 1.5rem;
+
+            ul {
+                justify-content: center;
+                margin-top: 0;
+                li {
+                    margin: 0 0.75rem;
+
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $teal;
+                        border: 1px solid;
+                        border-radius: 50%;
+                        transition: all 200ms ease;
+
+                        svg path {
+                            fill: $teal;
+                            transition: all 200ms ease;
+                        }
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+             @media (min-width: $laptop) {
+                max-width: 960px;
+             }
+        }
+    }
+
+    @media (min-width: $laptop) {
+        &__content {
+            padding: 3rem;
+            padding-top: 1rem;
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__bottom {
+            padding: 1.5rem 3rem;
+        }
+    }
+}

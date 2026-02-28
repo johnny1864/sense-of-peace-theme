@@ -1,0 +1,90 @@
+.template-thank-you{
+    .gfooter__content {
+        display: none !important;
+    }
+}
+
+.thank-you {
+    background-size: cover;
+    background-position: center;
+    margin: 0 !important;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: $xdgray, $alpha: 0.4);
+        @media screen and (min-width: $laptop){
+            background-color: rgba($color: $xdgray, $alpha: 0.1);
+        }
+    }
+
+     &__shadow {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(1.2);
+        height: 100%;
+        width: auto;
+        opacity: 0.5;
+    }
+
+    .svg-icon {
+        &--curve {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(65%);
+            width: 100%;
+            height: auto;
+
+            svg path {
+                fill: $footer_bottom;
+            }
+
+            .positioner {
+                position: relative;
+            }
+        }
+    }
+
+    &__wrapper {
+        z-index: 3;
+        padding: 3rem 0;
+        @media screen and (min-width: $laptop) {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+    }
+
+    &__title,
+    &__content {
+        color: $white;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+        @media screen and (min-width: $laptop) {
+            font-size: 4.25rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        @media screen and (min-width: $laptop) {
+            font-size: 2rem;
+        }
+    }
+
+}

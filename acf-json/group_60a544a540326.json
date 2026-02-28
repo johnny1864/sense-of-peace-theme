@@ -1,0 +1,86 @@
+{
+    "key": "group_60a544a540326",
+    "title": "Settings: Additional Scripts",
+    "fields": [
+        {
+            "key": "field_60a544b6c6674",
+            "label": "Head Scripts",
+            "name": "head_scripts",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add custom scripts before the closing <code>&lt;\/head&gt;<\/code> tag.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 10,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_60a545a3ef62d",
+            "label": "Body Scripts - Top",
+            "name": "body_scripts_top",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add custom scripts after the opening <code>&lt;body&gt;<\/code> tag.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 10,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_60a545b5ef62e",
+            "label": "Body Scripts - Bottom",
+            "name": "body_scripts_bottom",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add custom scripts before the closeing <code>&lt;\/body&gt;<\/code> tag.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 10,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "additional-scripts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1772298625
+}

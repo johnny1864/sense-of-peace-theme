@@ -1,0 +1,151 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    margin-top: 0 !important;
+    padding: 0;
+
+    @media screen and (max-width: $tablet) {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        position: relative;
+        color: $dgray;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 3.25rem;
+        }
+    }
+
+    &__row {
+        .col {
+            &--content {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        @media screen and (min-width: $laptop) {
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        position: relative;
+
+        color: $dgray;
+    }
+
+    &__image {
+        position: relative;
+        z-index: 2;
+        img {
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 5px solid $primary;
+            object-fit: cover;
+            transform: scale(1.1);
+        }
+    }
+
+    &__usps {
+        background-color: $green;
+        padding: 1.5rem 0 1.5rem;
+        --swiper-theme-color: #fff;
+        --swiper-pagination-bullet-inactive-color: #fff;
+
+        .swiper-pagination {
+            bottom: 0;
+        }
+
+        &--wrapper {
+            padding-bottom: 2rem;
+        }
+
+        @media screen and (min-width: $tablet) {
+            padding: 1rem 0 3rem;
+        }
+
+        @media screen and (min-width: $laptop) {
+            padding-top: 0;
+
+            .container {
+                max-width: 1000px;
+            }
+        }
+
+        @media screen and (max-width: $laptop - 1) {
+            padding-bottom: 160px;
+        }
+
+        &-subcontent {
+            color: $white;
+            @media screen and (min-width: $desktop) {
+                width: 80%;
+            }
+        }
+
+        &--block {
+            color: $white;
+
+            @media screen and (min-width: $tablet) {
+                padding: 1rem;
+                width: calc(30% - 3rem);
+                margin: 0 1.5rem;
+            }
+        }
+
+        &--icon {
+            margin-bottom: 0.5rem;
+
+            @media screen and (min-width: $laptop) {
+                height: 170px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-height: 100%;
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        &--text {
+            text-transform: uppercase;
+            text-wrap: balance;
+            line-height: 1.1;
+            width: 70%;
+            margin: 0 auto;
+
+            @media screen and (min-width: $laptop) {
+                font-size: 1.25rem;
+                width: 100%;
+            }
+        }
+
+        .svg-icon {
+            &--bottom-curve {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translateY(65%);
+                width: 100%;
+                height: auto;
+
+                @media screen and (min-width: $laptop) {
+                    transform: translateY(80%);
+                }
+
+                .positioner {
+                    position: relative;
+                }
+            }
+        }
+    }
+}
