@@ -1,0 +1,48 @@
+.testimonials {
+
+    &__house {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__wrapper {
+        padding-top: 20%;
+    }
+
+    &__card {
+        width: 80%;
+        line-height: 1.1;
+        font-size: 0.9rem;
+        color: $white;
+        padding: 0 1rem;
+
+        &-author {
+            color: $white;
+            margin-bottom: 0.5rem;
+        }
+
+        &-stars {
+            max-width: 100px;
+        }
+
+        &-quote {
+            margin-top: 8%;
+        }
+
+        @media screen and (min-width: $laptop) {
+            font-size: 1.25rem;
+            line-height: 1.2;
+
+            &-stars {
+            max-width: 140px;
+        }
+
+            &-quote {
+                padding: 1.5rem 1rem;
+                margin-top: 15%;
+            }
+        }
+    }
+}
