@@ -39,10 +39,10 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 
 				</div>
 			</div>
-			<div class="image-content-blocks__wrapper relative">
+			<div class="image-content-blocks__wrapper mx-auto relative">
 				<?php foreach ( $blocks as $index => $block ) : ?>
 					<div class="image-content-blocks__block">
-						<div class="lg:flex items-center <?php if ( $index % 2 == 0 )
+						<div class="lg:flex justify-between items-center <?php if ( $index % 2 == 0 )
 							echo 'lg:flex-row-reverse'; ?>">
 							<div class="col col--image">
 								<div class="image-content-blocks__block--image">

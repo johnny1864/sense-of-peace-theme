@@ -20,11 +20,11 @@
 		<div class="hero__usps relative">
 			<div class="container">
 				<div class="hero__usps--wrapper swiper">
-					<div class="swiper-wrapper">
+					<div class="swiper-wrapper md:justify-between">
 						<?php foreach ( $hero['usps'] as $usp ) : ?>
 							<div class="hero__usps--block swiper-slide text-center">
 								<?php if ( ! empty( $usp['icon'] ) ) : ?>
-									<div class="hero__usps--icon">
+									<div class="hero__usps--icon mx-auto">
 										<?php echo getIMG( $usp['icon']['ID'] ); ?>
 									</div>
 								<?php endif; ?>
@@ -35,8 +35,8 @@
 						<?php endforeach; ?>
 					</div>
 					<!-- Arrows -->
-					<div class="swiper-button-prev md:hidden"></div>
-					<div class="swiper-button-next md:hidden"></div>
+					<div class="swiper-button-prev mob-only md:hidden"></div>
+					<div class="swiper-button-next mob-only md:hidden"></div>
 
 					<!-- Dots -->
 					<div class="swiper-pagination md:hidden"></div>

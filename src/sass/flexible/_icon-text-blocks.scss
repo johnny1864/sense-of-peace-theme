@@ -1,0 +1,21 @@
+.icon-text-blocks {
+
+    &__blocks {
+        padding: 1rem;
+
+        @media screen and (min-width: $laptop) {
+            padding: 2rem 1.5rem;
+        }
+    }
+    &__block {
+        &-icon {
+            height: 115px;
+            img {
+                max-height: 100%;
+            }
+        }
+        @media screen and (min-width: $laptop) {
+            width: 25%;
+        }
+    }
+}

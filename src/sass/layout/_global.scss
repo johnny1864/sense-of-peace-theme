@@ -250,13 +250,13 @@ a {
 
 .btn {
     @extend %button;
-    background: $orange;
+    background: $primary;
     color: $white;
 
     &:hover {
         color: $white;
         // background: lighten($black, 10);
-        background: color-mix(in srgb,$orange,#fff 15%);
+        background: color-mix(in srgb,$primary,#fff 15%);
     }
 
     &:focus {

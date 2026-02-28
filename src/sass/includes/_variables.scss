@@ -36,7 +36,7 @@ $footer_bottom: #444444;
 $primary: $pink;
  
 
-$border-radius: 2rem;
+$border-radius: 0;
 
 //----------------------------------------------
 //* Forms
@@ -53,7 +53,7 @@ $input_background: $white;
 //* LAYOUTS
 //---------------------------------------------
 $container_sm: 720px;
-$container_md: 960px;
+$container_md: 1000px;
 $container: 1200px;
 $container_lg: 1440px;
 
@@ -82,7 +82,7 @@ $thick: 900;
 $link_color: $info;
 
 // Headings
-$heading_color: $teal;
+$heading_color: $primary;
 $heading_font: $sans;
 $heading_weight: $bold;
 
@@ -94,8 +94,8 @@ $heading_h5: 1rem;
 $heading_h6: .875rem;
 
 $heading_h1__mobile: 2rem;
-$heading_h2__mobile: 1.5rem;
-$heading_h3__mobile: 1.5rem;
+$heading_h2__mobile: 2rem;
+$heading_h3__mobile: 1.8rem;
 $heading_h4__mobile: 1.25rem;
 $heading_h5__mobile: 1rem;
 $heading_h6__mobile: .9rem;

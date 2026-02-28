@@ -28,11 +28,24 @@
         }
     }
 
+
+    &__wrapper {
+        @media screen and (min-width: $desktop) {
+            // max-width: 1000px;
+        }
+    }
+
     &__block {
         margin-bottom: 1.5rem;
 
         &--image {
             margin-bottom: 1rem;
+
+            img {
+                aspect-ratio: 1/1;
+                border: 5px solid $primary;
+                object-fit: cover;
+            }
         }
 
         @media screen and (min-width: $laptop) {
@@ -50,11 +63,11 @@
 
             .col {
                 &--image {
-                    width: 45%
+                    width: 30%
                 }
 
                 &--content {
-                    width: 55%
+                    width: 65%
                 }
             }
         }
