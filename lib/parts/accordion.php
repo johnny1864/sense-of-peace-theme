@@ -3,6 +3,7 @@ $icon = isset($args['icon']) ? getIMG($args['icon']['ID'], 'sm') : false;
 $label = $args['label'];
 $group = $args['group'] ?? null;
 $content = $args['content'];
+$args['active'] = false;
 $active = (bool) $args['active'] ?? false;
 ?>
 

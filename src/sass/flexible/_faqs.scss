@@ -1,0 +1,29 @@
+.faqs-block {
+    *:not(.btn) {
+        color: $secondary;
+    }
+
+    background-color: $primary;
+
+    .row {
+
+        @media screen and (min-width: $laptop) {
+            flex-wrap: nowrap;
+            .col{
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: $desktop) {
+            .col{
+                &--left {
+                    width: 45%;
+                }
+
+                &--right {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}

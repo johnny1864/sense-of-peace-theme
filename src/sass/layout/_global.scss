@@ -289,22 +289,23 @@ a {
     &--secondary,
     &--outline {
         background: transparent;
-        color: $black;
-        border-color: $black;
+        color: $primary;
+        border-color: $primary;
 
         &:hover {
             background: transparent;
-            color: $black;
+            color: $primary;
         }
     }
 
     &--secondary {
         background-color: $white;
-        color: $black;
+        color: $primary;
         
         &:hover {
-            background-color: $orange;
+            background-color: transparent;
             color: $white;
+            border-color: $white;
         }
     }
 
