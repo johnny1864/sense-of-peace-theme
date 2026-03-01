@@ -5,7 +5,7 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 <div <?php echo $attr; ?>>
 	<div class="container container--small relative">
 		<img class="testimonials__house" src="http://sense-peace.local/wp-content/uploads/2026/02/house.png" alt="">
-		<div class="testimonials__wrapper ">
+		<div class="testimonials__wrapper relative">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<?php
