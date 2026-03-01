@@ -590,6 +590,33 @@ jQuery(document).ready(function ($) {
     window.addEventListener("resize", initUspSwiper);
   })();
 
+  var TextSlider = (function(){
+    const el = document.querySelector('.text-slider__slider.swiper');
+			if (!el || typeof Swiper === 'undefined') return;
+			el.closest('.testimonials__wrapper');
+
+			new Swiper(el, {
+				slidesPerView: 1,
+				loop: true,
+				speed: 500,
+
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+				},
+
+				navigation: {
+					nextEl: el.querySelector('.swiper-button-next'),
+					prevEl: el.querySelector('.swiper-button-prev'),
+				},
+
+				pagination: {
+					el: el.querySelector('.swiper-pagination'),
+				}
+			});
+  }());
+
   var LoadMore = (function () {
     var $loadmore = $("#loadmore");
 

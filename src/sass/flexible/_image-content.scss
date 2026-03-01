@@ -1,0 +1,25 @@
+.image-content {
+    .row {
+        @media screen and (min-width: $laptop) {
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: $laptop) {
+            .col {
+                &--left {
+                    width: 45%;
+                }
+
+                &--right {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}

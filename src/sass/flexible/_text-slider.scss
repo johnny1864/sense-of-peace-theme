@@ -1,0 +1,40 @@
+.text-slider {
+    background-position: center;
+    background-size: cover;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &__box {
+        padding: 1.5rem 1rem;
+        background-color: rgba($color: $white, $alpha: 0.80);
+        @media screen and (min-width: $laptop) {
+            padding: 3rem 2rem;
+        }
+
+        @media screen and (min-width: $desktop_lg) {
+            padding: 3rem;
+        }
+    }
+
+    &__card {
+        width: 90%;
+
+        @media screen and (min-width: $laptop) {
+            width: 80%;
+        }
+    }
+
+    &__slider {
+        .swiper-wrapper {
+            padding: 1.5rem 0;
+        }
+    }
+}

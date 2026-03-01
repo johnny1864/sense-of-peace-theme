@@ -1,5 +1,4 @@
 .testimonials {
-
     &__house {
         position: absolute;
         top: 0;
@@ -35,13 +34,18 @@
             font-size: 1.25rem;
             line-height: 1.2;
 
+            &-author {
+                font-size: 1.5rem;
+            }
+
             &-stars {
-            max-width: 140px;
-        }
+                max-width: 140px;
+            }
 
             &-quote {
                 padding: 1.5rem 1rem;
                 margin-top: 12%;
+                font-size: 1.25rem;
             }
         }
     }

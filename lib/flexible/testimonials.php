@@ -22,8 +22,9 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 									<h5 class="testimonials__card-author">
 										<?php echo esc_html( $name ); ?>
 									</h5>
-									
-									<img class="testimonials__card-stars block mx-auto" src="http://sense-peace.local/wp-content/uploads/2026/02/stars.png" alt="">	
+
+									<img class="testimonials__card-stars block mx-auto"
+										src="http://sense-peace.local/wp-content/uploads/2026/02/stars.png" alt="">
 								<?php endif; ?>
 								<div class="testimonials__card-quote">
 									<?php echo $quote; ?>
@@ -47,6 +48,7 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 		setTimeout(function () {
 			const el = document.querySelector('.testimonials__wrapper .swiper');
 			if (!el || typeof Swiper === 'undefined') return;
+			const wrapper = el.closest('.testimonials__wrapper');
 
 			new Swiper(el, {
 				slidesPerView: 1,
@@ -60,9 +62,13 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 				},
 
 				navigation: {
-					nextEl: el.querySelector('.testimonials-swiper__next'),
-					prevEl: el.querySelector('.testimonials-swiper__prev'),
+					nextEl: wrapper.querySelector('.testimonials-swiper__next'),
+					prevEl: wrapper.querySelector('.testimonials-swiper__prev'),
 				},
+
+				pagination: {
+					el: wrapper.querySelector('.swiper-pagination'),
+				}
 			});
 		}, 1000)
 	});
