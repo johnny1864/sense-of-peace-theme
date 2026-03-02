@@ -61,6 +61,8 @@
         --swiper-theme-color: #fff;
         --swiper-pagination-bullet-inactive-color: #fff;
 
+        background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.5) 100%);
+
         .swiper-pagination {
             bottom: 0;
         }
@@ -79,6 +81,7 @@
 
         @media screen and (min-width: $laptop) {
             padding-top: 0;
+            background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.4) 90%, rgba($lgray, 0.2) 100%);
         }
 
         @media screen and (max-width: $laptop - 1) {

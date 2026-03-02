@@ -2,6 +2,12 @@
     color: $white;
     background-color: $teal;
 
+    &__banner {
+        background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.5) 100%);
+        @media screen and (min-width: $laptop) {
+            background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.4) 90%, rgba($lgray, 0.2) 100%);
+        }
+    }
     &__content {
         color: $white;
     }
