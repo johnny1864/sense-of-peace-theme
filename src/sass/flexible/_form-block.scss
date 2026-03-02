@@ -9,11 +9,13 @@
     }
 
     @media screen and (min-width: $desktop_lg) {
-        padding: 6rem 3rem;
+        padding: 8rem 3rem;
     }
 
     .section-header {
-        .section-title {}
+        *:not(.btn) {
+            color: $dgray;
+        }
     }
 
     &__box {
@@ -36,6 +38,7 @@
         }
 
         [type="submit"] {
+            margin-bottom: 1.5rem;
             background: $primary;
             color: $white;
 

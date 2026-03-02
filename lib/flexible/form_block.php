@@ -15,7 +15,7 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 	<?php endif; ?>
 	<div class="container relative">
 		<div class="form-block__box">
-			<div id="form-block__section-header" class="section-header">
+			<div id="form-block__section-header " class="section-header">
 				<div class="section-header__content text-center">
 					<?php if ( ! empty( $sec_heading ) ) : ?>
 						<h2 class="section-title position-relative">

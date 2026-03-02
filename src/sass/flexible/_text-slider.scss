@@ -60,10 +60,12 @@
         }
     }
 
+    &__top-content,
     &__bottom-content {
-        margin-top: 1.5rem;
+        padding: 1rem;
         @media screen and (min-width: $laptop) {
-            margin-top: 2rem;
+           padding: 2rem; 
+           font-size: 1.5rem;
         }
     }
 }
