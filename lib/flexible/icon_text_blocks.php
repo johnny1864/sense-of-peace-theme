@@ -8,7 +8,7 @@
 <section <?php echo $attr; ?>>
     <div class="container container--md">
         <?php if(!empty($top_content)) : ?>
-        <div class="top-content">
+        <div class="icon-text-blocks__top-content text-center">
             <?php echo $top_content; ?>
         </div>
         <?php endif; ?>
@@ -41,7 +41,7 @@
         <?php endif; ?>
 
         <?php if(!empty($bottom_content)) : ?>
-        <div class="bottom-content">
+        <div class="icon-text-blocks__bottom-content text-center">
             <?php echo $bottom_content; ?>
         </div>
         <?php endif; ?>

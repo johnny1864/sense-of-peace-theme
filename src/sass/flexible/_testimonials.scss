@@ -6,6 +6,21 @@
         }
     }
 
+    .svg-code {
+        &--banner {
+            width: 200vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            @media screen and (min-width: $tablet) {
+                width: 100vw;
+                transform: translate(-50%, -45%);
+            }
+        }
+    }
+
     &__house {
         position: absolute;
         top: 0;
@@ -22,7 +37,7 @@
         padding-top: 20%;
         --swiper-theme-color: #f858b2;
         --swiper-pagination-bullet-inactive-color: #f858b2;
-        --swiper-pagination-top: 0;
+        --swiper-pagination-bottom: 0;
     }
 
 
@@ -49,7 +64,7 @@
         @media screen and (min-width: $laptop) {
             font-size: 1.25rem;
             line-height: 1.2;
-             padding: 0 1rem;
+            padding: 0 1rem;
 
             &-author {
                 font-size: 1.5rem;

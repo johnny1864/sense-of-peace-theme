@@ -35,7 +35,7 @@
             left: 0;
             height: 3px;
             width: 100%;
-            background: $black;
+            background: $white;
             margin: auto;
             transition: background .16s ease, width .16s ease, transform .16s ease;
 
@@ -129,6 +129,7 @@
             font-size: 1rem;
             font-weight: $bold;
             color: $white;
+            text-transform: uppercase;
             &:hover {
                 text-decoration: none;
             }
@@ -180,6 +181,7 @@
     z-index: 99;
     transition: left .15s ease;
     margin-top: 3.5rem;
+    background-color: $primary;
 
     .menu-item__submenu {
         background: $xxlgray;

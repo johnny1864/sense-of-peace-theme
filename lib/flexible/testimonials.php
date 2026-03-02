@@ -4,8 +4,10 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 ?>
 <div <?php echo $attr; ?>>
 	<div class="container container--small relative">
-		<img class="testimonials__house" src="http://sense-peace.local/wp-content/uploads/2026/02/house.png" alt="">
+		<?php echo getSVG('banner', false, false) ?>
+		<img class="testimonials__house" src="https://wheat-gazelle-627237.hostingersite.com/wp-content/uploads/2026/03/house.png" alt="">
 		<div class="testimonials__wrapper relative">
+			
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<?php
@@ -24,7 +26,7 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 									</h5>
 
 									<img class="testimonials__card-stars block mx-auto"
-										src="http://sense-peace.local/wp-content/uploads/2026/02/stars.png" alt="">
+										src="https://wheat-gazelle-627237.hostingersite.com/wp-content/uploads/2026/03/stars.png" alt="">
 								<?php endif; ?>
 								<div class="testimonials__card-quote">
 									<?php echo $quote; ?>

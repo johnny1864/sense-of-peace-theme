@@ -4,10 +4,15 @@
     .section-header {
         position: relative;
 
+        &__content {
+            margin: 1rem 0;
+        }
+
         .row {
             @media screen and (min-width: $laptop) {
                 flex-wrap: nowrap;
                 align-items: center;
+
                 .col {
                     width: 50%;
                 }
@@ -17,17 +22,19 @@
 
     &__float-image {
         margin-top: -20%;
+
         @media screen and (min-width: $laptop) {
             margin-top: -10%;
             transform: translate(-20%, 0%);
         }
+
         img {
             aspect-ratio: 1/1;
             border-radius: 50%;
             border: 5px solid $primary;
             object-fit: cover;
             transform: scale(1.1);
-            
+
         }
     }
 
