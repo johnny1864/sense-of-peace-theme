@@ -38,7 +38,7 @@
             font-family: 'Avenir';
             src: local('Avenir'),
                 url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir.woff2') format('woff2');
-            font-weight: 300, 400, 500, 700, 900;
+            font-weight: 300, 400, 500, 600, 700, 900;
             font-style: normal;
             font-display: swap;
         }

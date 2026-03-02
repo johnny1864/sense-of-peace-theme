@@ -1,15 +1,94 @@
 .gfooter {
-    color: $white;
-    background-color: $teal;
-
+    color: $footer_color;
+  
     &__banner {
         background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.5) 100%);
+
         @media screen and (min-width: $laptop) {
             background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.4) 90%, rgba($lgray, 0.2) 100%);
         }
     }
+
+    &__icon {
+        .svg-icon {
+            width: 3rem;
+            height: 3rem;
+            margin: 0 auto;
+
+            svg path {
+                fill: $primary;
+            }
+        }
+    }
+
+    &__location {
+        a {
+            text-decoration: none;
+        }
+    }
+
     &__content {
         color: $white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 -3px 11px 0;
+        padding: 0.5rem 0;
+        h5 {
+            margin: 0.5rem 0 0.5rem;
+        }
+        img {
+            margin: 0 auto;
+        }
+
+        .footer-socials {
+            margin-top: 1.5rem;
+            .mail-icon {
+                padding: 0.5rem;
+                border-radius: 50%;
+                margin: 0 2px;
+                background-color: $footer_color;
+                .svg-icon {
+                    height: 1.25rem;
+                    width: 1.25rem;
+                    margin: 3px;
+                    svg path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            ul {
+                margin-top: 0;
+                li {
+                    margin: 0;
+                    padding: 0 2px;
+                }
+                .social-link {
+                    padding: 0.5rem;
+                    
+                    border-radius: 50%;
+                    background-color: $footer_color;
+
+                    &--linkedin {
+                        background-color: #2867b2;
+                    }
+
+                    &--instagram {
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+                    }
+
+                    &--facebook {
+                        background-color: #1877f2;
+                    }
+
+                    .svg-icon {
+                        //margin: 0;
+                        margin: 3px;
+                    }
+                }
+
+            }
+        }
     }
 
     &__content,
@@ -21,8 +100,6 @@
     &__bottom {
         padding: 1rem 1.5rem;
         font-size: .9rem;
-        background-color: $footer_bottom;
-        color: $teal;
 
         p {
             margin: 0.5rem;
@@ -34,6 +111,7 @@
             ul {
                 justify-content: center;
                 margin-top: 0;
+
                 li {
                     margin: 0 0.75rem;
 
@@ -66,9 +144,9 @@
             flex-direction: row;
             justify-content: center;
 
-             @media (min-width: $laptop) {
+            @media (min-width: $laptop) {
                 max-width: 960px;
-             }
+            }
         }
     }
 
@@ -76,6 +154,7 @@
         &__content {
             padding: 3rem;
             padding-top: 1rem;
+
             p {
                 margin-bottom: 1rem;
             }

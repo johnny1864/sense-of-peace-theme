@@ -1,6 +1,7 @@
 .text-slider {
     background-position: center;
     background-size: cover;
+
     &::before {
         content: '';
         display: block;
@@ -15,6 +16,7 @@
     &__box {
         padding: 1.5rem 1rem;
         background-color: rgba($color: $white, $alpha: 0.80);
+
         @media screen and (min-width: $laptop) {
             padding: 3rem 2rem;
         }
@@ -33,8 +35,17 @@
     }
 
     &__slider {
+        --swiper-theme-color: #f858b2;
+        --swiper-pagination-bullet-inactive-color: #f858b2;
+        --swiper-pagination-top: 0;
+
         .swiper-wrapper {
             padding: 1.5rem 0;
+            
         }
+    }
+
+    &__bottom-content {
+        margin-top: 1.5rem;
     }
 }

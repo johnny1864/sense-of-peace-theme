@@ -28,7 +28,11 @@
 					'theme_location' => 'main'
 				));
 			?>
-            </nav> 
+            </nav>
+			
+			 <button aria-label="menu-toggle" type="button" class="menu-burger" title="Menu">
+                <span class="menu-burger__icon"><span></span></span>
+            </button> 
         </div>
     </div>
 

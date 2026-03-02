@@ -571,13 +571,10 @@ jQuery(document).ready(function ($) {
           slidesPerView: 1,
           spaceBetween: 16,
           loop: true,
+          pagination: false,
           navigation: {
             nextEl: ".hero__usps--wrapper .swiper-button-next",
             prevEl: ".hero__usps--wrapper .swiper-button-prev",
-          },
-          pagination: {
-            el: ".hero__usps--wrapper .swiper-pagination",
-            clickable: false,
           }
         });
       } else if (window.innerWidth > 767 && uspSwiper) {

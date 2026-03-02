@@ -1,21 +1,37 @@
 .testimonials {
+
+    .container {
+        @media screen and (max-width: $laptop - 1) {
+            max-width: 420px;
+        }
+    }
+
     &__house {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        transform: scale(1.1);
+
+        @media screen and (min-width: $laptop) {
+            transform: scale(1);
+        }
     }
 
     &__wrapper {
         padding-top: 20%;
+        --swiper-theme-color: #f858b2;
+        --swiper-pagination-bullet-inactive-color: #f858b2;
+        --swiper-pagination-top: 0;
     }
+
+
 
     &__card {
         width: 80%;
         line-height: 1.1;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: $white;
-        padding: 0 1rem;
 
         &-author {
             color: $white;
@@ -33,6 +49,7 @@
         @media screen and (min-width: $laptop) {
             font-size: 1.25rem;
             line-height: 1.2;
+             padding: 0 1rem;
 
             &-author {
                 font-size: 1.5rem;

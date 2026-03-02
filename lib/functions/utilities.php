@@ -108,7 +108,7 @@ function getSocialLinks( $socials = null ) {
 	if ( is_null( $socials ) )
 		$socials = get_field( 'global', 'option' )['contact']['socials'];
 
-	$social_icons = array( 'twitter', 'facebook', 'instagram', 'linkedin', 'pinterest', 'tiktok', 'yelp', 'youtube', 'x' );
+	$social_icons = array( 'twitter', 'facebook', 'instagram', 'linkedin', 'pinterest', 'tiktok', 'yelp', 'youtube', 'x', 'email' );
 
 	if ( ! empty( $socials ) ) {
 		$html = '<nav class="social-links"><ul>';
@@ -121,7 +121,7 @@ function getSocialLinks( $socials = null ) {
 
 			$icon = in_array( $domain, $social_icons ) ? $domain : 'world';
 
-			$html .= '<li><a aria-label="link to Robeks ' . $domain . ' page" href="' . $url . '" target="_blank">';
+			$html .= '<li><a class="social-link social-link--' . $icon .'" aria-label="link to ' . $domain . ' page" href="' . $url . '" target="_blank">';
 			$html .= getSVG( $icon );
 			$html .= '</a></li>';
 		}

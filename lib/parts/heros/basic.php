@@ -1,6 +1,7 @@
 <section <?php echo $classes; ?>>
 	<div class="hero__wrapper">
-		<div class="container  relative">
+		<img class="hero__bg-graphic" src="http://sense-peace.local/wp-content/uploads/2026/03/sop-bg.png" alt="">
+		<div class="container relative">
 			<div class="hero__row row">
 				<div class="col col--content text-center lg:text-left">
 					<h1 class="hero__title"><?php echo $title; ?></h1>

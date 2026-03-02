@@ -8,26 +8,55 @@
         padding-bottom: 0;
     }
 
+    .hero__bg-graphic {
+        position: absolute;
+        top: 0;
+        width: 200%;
+        max-width: unset;
+        opacity: 0.5;
+        @media screen and (min-width: $laptop) {
+            top: 0;
+            left: 30%;
+            width: auto;
+            width: 70%;
+            transform: translateY(-10%);
+        }
+    }
+
     h1 {
         position: relative;
         color: $dgray;
-
-        @media screen and (min-width: 1600px) {
-            font-size: 3.25rem;
+        font-weight: 400;
+        text-transform: none;
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
 
     &__row {
-        .col {
-            &--content {
-                padding: 1.5rem 1rem;
-            }
-        }
-
         @media screen and (min-width: $laptop) {
             flex-wrap: nowrap;
             align-items: center;
         }
+
+        .col {
+            &--content {
+                padding: 1.5rem 1rem;
+            }
+
+            @media screen and (min-width: $desktop_lg) {
+                &--content {
+                    width: 55%;
+                }
+
+                &--image {
+                    width: 45%;
+                }
+            }
+        }
+
+        
     }
 
     &__content {
@@ -36,12 +65,35 @@
         @media screen and (min-width: $laptop) {
             padding-right: 1.5rem;
         }
+
+        @media screen and (min-width: $desktop_lg) {
+            width: 90%;
+        }
     }
 
     &__image {
         position: relative;
         z-index: 2;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: $lgray;
+            bottom: -1px;
+            left: 0;
+        }
+
+        @media screen and (min-width: $laptop) {
+            &::before {
+                display: none;
+            }
+        }
+
         img {
+            position: relative;
             aspect-ratio: 1/1;
             border-radius: 50%;
             border: 5px solid $primary;
@@ -57,11 +109,11 @@
 
     &__usps {
         background-color: $green;
-        padding: 1.5rem 0 1.5rem;
+        padding: 2rem 1.5rem;
         --swiper-theme-color: #fff;
         --swiper-pagination-bullet-inactive-color: #fff;
 
-        background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.5) 100%);
+        background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 1) 100%);
 
         .swiper-pagination {
             bottom: 0;
@@ -81,11 +133,8 @@
 
         @media screen and (min-width: $laptop) {
             padding-top: 0;
-            background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.4) 90%, rgba($lgray, 0.2) 100%);
-        }
-
-        @media screen and (max-width: $laptop - 1) {
-            padding-bottom: 160px;
+            background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 0.6) 90%, rgba($lgray, 0.2) 100%);
+            font-size: 1.1rem;
         }
 
         &-subcontent {
@@ -100,15 +149,18 @@
 
             @media screen and (min-width: $tablet) {
                 padding: 1rem;
-                width: calc(30% - 3rem);
+                width: calc(33% - 3rem);
                 margin: 0 1.5rem;
             }
         }
 
         &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 0.5rem;
+            height: 140px;
             
-
             @media screen and (min-width: $laptop) {
                 max-width: 130px;
                 display: flex;
@@ -123,6 +175,7 @@
 
             img {
                 margin: 0 auto;
+                max-height: 100%;
             }
         }
 
@@ -134,7 +187,7 @@
             margin: 0 auto;
 
             @media screen and (min-width: $laptop) {
-                font-size: 1.25rem;
+    
                 width: 100%;
             }
         }
