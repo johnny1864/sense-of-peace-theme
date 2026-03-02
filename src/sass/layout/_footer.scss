@@ -24,6 +24,9 @@
     &__location {
         a {
             text-decoration: none;
+            span {
+                display: block;
+            }
         }
     }
 
@@ -97,9 +100,24 @@
         overflow: hidden;
     }
 
+    &__copy {
+        font-weight: bold;
+    }
+
     &__bottom {
         padding: 1rem 1.5rem;
         font-size: .9rem;
+
+        .h5 {
+            margin-top: 0.5rem;
+
+        }
+
+        h4 {
+            margin-bottom: 0.5rem;
+            font-weight: 900;
+            font-style: italic;
+        }
 
         p {
             margin: 0.5rem;

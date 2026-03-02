@@ -37,9 +37,9 @@ $footer_banner = $footer['footer_banner'];
                         <a style="text-decoration: underline !important;" aria-label="link to Sense of Peace Contact page" target="_black" href="https://www.senseofpeacehomecare.com/contact"> ADDRESS</a>
                     </h5>
 					<a href="https://www.senseofpeacehomecare.com/contact" class="h5">
-						867 Berkshire Blvd.<br>
-						Suite 101<br>
-						Wyomissing, PA 19610
+						<span>867 Berkshire Blvd.</span>
+						<span>Suite 101</span>
+						<span>Wyomissing, PA 19610</span>
 					</a>
 					<div class="">
 						<img src="https://lirp.cdn-website.com/e026569c/dms3rep/multi/opt/Home-Care-Pulse-Certified-Trusted-Provider-150x76-1920w.png"
@@ -75,7 +75,7 @@ $footer_banner = $footer['footer_banner'];
 			<div class="wrapper text-center">
 				<?php //echo getSocialLinks(); ?>
 				<h4>
-					"SMS/TEXT MESSAGING PRIVACY POLICY" <sup>TM</sup>	
+					"With Us, Your're Family" <sup>TM</sup>	
 				</h4>
                 <a class="h5" style="color: #514f4f !important;"
                     href="https://irp.cdn-website.com/e026569c/files/uploaded/Sense+of+Peace+Home+Care+SMS-Text+Messaging+Privacy+Policy.pdf">

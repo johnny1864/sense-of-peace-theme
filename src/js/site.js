@@ -615,6 +615,18 @@ jQuery(document).ready(function ($) {
 			});
   }());
 
+  var FormSubmission = (function(){
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        setTimeout( () => {
+           
+          const currentUrl = new URL(window.location.href);
+          currentUrl.searchParams.set('thank-you', 'true');
+          window.history.pushState({ path: currentUrl.href }, '', currentUrl.href);
+
+        }, 1000 );
+    }, false );
+  }())
+
   var LoadMore = (function () {
     var $loadmore = $("#loadmore");
 

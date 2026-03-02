@@ -31,9 +31,11 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 				</div>
 			</div>
 
+			<?php if ( ! empty( $form_shortcode ) ) : ?>
 			<div class="form-block__form">
 				<?php echo do_shortcode( $form_shortcode ) ?>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>

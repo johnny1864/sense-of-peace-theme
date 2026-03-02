@@ -63,6 +63,15 @@
             font-style: normal;
             font-display: swap;
         }
+
+        @font-face {
+            font-family: 'Avenir';
+            src: url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-BlackOblique.woff2') format('woff2'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-BlackOblique.woff') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
     </style>
     <?php wp_head(); ?>
 

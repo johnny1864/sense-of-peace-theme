@@ -8,7 +8,7 @@
 
 <section <?php echo $attr; ?>>
     <img class="image-content__bg-graphic" src="https://wheat-gazelle-627237.hostingersite.com/wp-content/uploads/2026/03/image-content-bg.png" alt="">
-    <div class="container">
+    <div class="container relative">
         <div class="row <?php if($invert) echo 'row--reverse'; ?>">
             <div class="col col--left">
                 <div class="image-content__img">
@@ -24,5 +24,18 @@
                 </div>  
             </div>
         </div>
+        
+        <?php if ( ! empty( $cta ) ) : ?>
+            <div class="image-content__cta flex justify-center ">
+                <a
+                    class="btn"
+                    href="<?php echo esc_url( $cta['url'] ); ?>"
+                    target="<?php echo esc_attr( $cta['target'] ); ?>"
+                >
+                    <?php echo esc_html( $cta['title'] ); ?>
+                </a>
+            </div>
+        <?php endif; ?>
+        
     </div>
 </section>

@@ -25,9 +25,19 @@
         @media screen and (min-width: $laptop) {
             padding: 3rem;
         }
+
+        @media screen and (min-width: $desktop_lg) {
+            padding: 4rem;
+        }
     }
 
     &__form {
+        margin-top: 1.5rem;
+
+        @media screen and (min-width: $laptop) {
+            margin-top: 3rem;
+        }
+
         p {
             margin: 0;
         }
@@ -38,7 +48,7 @@
         }
 
         [type="submit"] {
-            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
             background: $primary;
             color: $white;
 
@@ -50,7 +60,9 @@
         }
 
         .form-row {
-            margin-bottom: 0.5rem;
+            .form-col {
+                margin-bottom: 1rem;
+            }
 
             @media screen and (min-width: $laptop) {
                 display: flex;
@@ -63,7 +75,9 @@
         }
 
         .form-grid {
-            margin-bottom: 0.5rem;
+            .form-col {
+                margin-bottom: 1rem;
+            }
 
             @media screen and (min-width: $laptop) {
                 display: grid;
