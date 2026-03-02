@@ -7,6 +7,7 @@
 ?>
 
 <section <?php echo $attr; ?>>
+    <img class="image-content__bg-graphic" src="https://wheat-gazelle-627237.hostingersite.com/wp-content/uploads/2026/03/image-content-bg.png" alt="">
     <div class="container">
         <div class="row <?php if($invert) echo 'row--reverse'; ?>">
             <div class="col col--left">
@@ -18,7 +19,7 @@
             </div>
 
             <div class="col col--right">
-                <div class="image-content__content">
+                <div class="image-content__content text-center lg:text-left">
                     <?php if(!empty($content)) echo $content; ?>
                 </div>  
             </div>

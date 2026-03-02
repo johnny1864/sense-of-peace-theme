@@ -10,7 +10,7 @@ html, body {
 
 body {
     background: $white;
-    color: $xdgray;
+    color: $dgray;
     font-family: $sans;
     line-height: $line-height;
 
@@ -502,4 +502,38 @@ p {
 
 .section-padding-bottom {
     padding-bottom: 3rem;
+}
+
+.swiper {
+    &-button-prev,
+    &-button-next{
+        z-index: 20;
+        &::after {
+            display: none;
+        }
+
+        
+        .svg-icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            svg .cls-1 {
+                fill: $primary;
+            }
+        }
+
+
+    }
+
+    &-button-prev {
+        transform: rotate(90deg);
+    }
+    &-button-next {
+        transform: rotate(-90deg);
+    }
+
+    &-pagination {
+        top: unset;
+        bottom: 0;
+        --swiper-pagination-bullet-size: 12px;
+    }
 }

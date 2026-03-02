@@ -9,6 +9,11 @@
 ?>
 
 <section <?php echo $attr; ?> <?php if(!empty($bg_image)) echo $bg_image; ?>>
+    <?php if($heading) : ?>
+        <h2 class="section-title h3 text-secondary text-center">
+            <?php echo $heading ?>
+        </h2>
+    <?php endif; ?>
     <div class="container">
         <div class="text-slider__box text-center relative">
             <?php if(!empty($top_content)) : ?>
@@ -28,8 +33,12 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="swiper-button-prev desk-only"></div>
-                    <div class="swiper-button-next desk-only"></div>
+                    <div class="swiper-button-prev desk-only">
+                        <?php echo getSVG('arrow') ?>
+                    </div>
+                    <div class="swiper-button-next desk-only">
+                        <?php echo getSVG('arrow') ?>
+                    </div>
                     <div class="swiper-pagination"></div>
                 </div>
             <?php endif; ?>

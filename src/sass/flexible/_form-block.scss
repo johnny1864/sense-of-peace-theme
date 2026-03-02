@@ -5,7 +5,7 @@
     background-position: center;
 
     @media screen and (min-width: $laptop) {
-        padding: 4rem 3rem;   
+        padding: 4rem 3rem;
     }
 
     @media screen and (min-width: $desktop_lg) {
@@ -13,9 +13,7 @@
     }
 
     .section-header {
-        .section-title {
-            
-        }
+        .section-title {}
     }
 
     &__box {
@@ -31,16 +29,46 @@
         p {
             margin: 0;
         }
+
+        label {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        [type="submit"] {
+            background: $primary;
+            color: $white;
+
+            &:hover {
+                color: $white;
+                // background: lighten($black, 10);
+                background: color-mix(in srgb, $primary, #fff 15%);
+            }
+        }
+
         .form-row {
+            margin-bottom: 0.5rem;
+
             @media screen and (min-width: $laptop) {
                 display: flex;
+
                 .form-col {
                     width: 50%;
                     padding: 0.25rem;
                 }
             }
         }
+
+        .form-grid {
+            margin-bottom: 0.5rem;
+
+            @media screen and (min-width: $laptop) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 0.5rem;
+            }
+        }
     }
 
-    
+
 }

@@ -590,7 +590,7 @@ jQuery(document).ready(function ($) {
   var TextSlider = (function(){
     const el = document.querySelector('.text-slider__slider.swiper');
 			if (!el || typeof Swiper === 'undefined') return;
-			el.closest('.testimonials__wrapper');
+			const wrapper = el.closest('.text-slider__box');
 
 			new Swiper(el, {
 				slidesPerView: 1,
@@ -604,12 +604,13 @@ jQuery(document).ready(function ($) {
 				},
 
 				navigation: {
-					nextEl: el.querySelector('.swiper-button-next'),
-					prevEl: el.querySelector('.swiper-button-prev'),
+					nextEl: wrapper.querySelector('.swiper-button-next'),
+					prevEl: wrapper.querySelector('.swiper-button-prev'),
 				},
 
 				pagination: {
 					el: el.querySelector('.swiper-pagination'),
+          clickable: true
 				}
 			});
   }());

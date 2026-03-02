@@ -1,6 +1,6 @@
 <section <?php echo $classes; ?>>
 	<div class="hero__wrapper">
-		<img class="hero__bg-graphic" src="http://sense-peace.local/wp-content/uploads/2026/03/sop-bg.png" alt="">
+		<img class="hero__bg-graphic" src="https://wheat-gazelle-627237.hostingersite.com/wp-content/uploads/2026/03/sop-bg.png" alt="">
 		<div class="container relative">
 			<div class="hero__row row">
 				<div class="col col--content text-center lg:text-left">
@@ -36,14 +36,18 @@
 						<?php endforeach; ?>
 					</div>
 					<!-- Arrows -->
-					<div class="swiper-button-prev mob-only md:hidden"></div>
-					<div class="swiper-button-next mob-only md:hidden"></div>
+					<div class="swiper-button-prev mob-only md:hidden">
+						<?php echo getSVG('arrow') ?>
+					</div>
+					<div class="swiper-button-next mob-only md:hidden">
+						<?php echo getSVG('arrow') ?>
+					</div>
 
 					<!-- Dots -->
 					<div class="swiper-pagination md:hidden"></div>
 				</div>
 
-				<div class="hero__usps-subcontent text-center mx-auto">
+				<div class="hero__usps-subcontent text-center mx-auto relative">
 					<?php if ( ! empty( $hero['usps_subcontent'] ) ) : ?>
 						<?php echo $hero['usps_subcontent']; ?>
 					<?php endif; ?>

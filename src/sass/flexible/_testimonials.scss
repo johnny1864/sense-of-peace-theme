@@ -37,7 +37,21 @@
         padding-top: 20%;
         --swiper-theme-color: #f858b2;
         --swiper-pagination-bullet-inactive-color: #f858b2;
-        --swiper-pagination-bottom: 0;
+        --swiper-pagination-bottom: -5px;
+        --swiper-pagination-bullet-width: 10px;
+        --swiper-pagination-bullet-height: 10px;
+
+        @media screen and (min-width: $laptop) {
+            padding-top: 25%;
+
+            .swiper-button-prev {
+                left: -6rem;
+            }
+
+            .swiper-button-next {
+                right: -6rem;
+            }
+        }
     }
 
 
@@ -76,7 +90,7 @@
 
             &-quote {
                 padding: 1.5rem 1rem;
-                margin-top: 12%;
+                margin-top: 5%;
                 font-size: 1.25rem;
             }
         }

@@ -1,8 +1,21 @@
 .image-content-blocks {
     padding-top: 0;
 
+    @media screen and (min-width: $desktop_lg) {
+            font-size: 1.4rem;
+            line-height: 1.3;
+        }
+
     .section-header {
         position: relative;
+
+        .section-title {
+            font-weight: normal;
+            text-transform: unset;
+            span {
+                font-weight: 600;
+            }
+        }
 
         &__content {
             margin: 1rem 0;
@@ -35,13 +48,6 @@
             object-fit: cover;
             transform: scale(1.1);
 
-        }
-    }
-
-
-    &__wrapper {
-        @media screen and (min-width: $desktop) {
-            // max-width: 1000px;
         }
     }
 

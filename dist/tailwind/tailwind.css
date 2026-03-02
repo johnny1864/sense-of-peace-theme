@@ -803,10 +803,6 @@ video {
     display: flex;
   }
 
-  .lg\:w-1\/5 {
-    width: 20%;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
   }

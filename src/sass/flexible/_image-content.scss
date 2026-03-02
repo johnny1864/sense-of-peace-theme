@@ -1,4 +1,17 @@
 .image-content {
+    position: relative;
+    overflow: visible;
+    &__bg-graphic {
+        position: absolute;
+        width: 200%;
+        top: -3rem;
+        right: 0;
+        max-width: unset;
+        @media screen and (min-width: $laptop) {
+            opacity: 0.5;
+            width: 100%;
+        }
+    }
     .row {
         @media screen and (min-width: $laptop) {
             flex-wrap: nowrap;

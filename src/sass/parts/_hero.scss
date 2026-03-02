@@ -4,6 +4,10 @@
     margin-top: 0 !important;
     padding: 0;
 
+    @media screen and (min-width: $laptop) {
+        padding-top: 1.5rem;
+    }
+
     @media screen and (max-width: $tablet) {
         padding-bottom: 0;
     }
@@ -29,7 +33,7 @@
         font-weight: 400;
         text-transform: none;
         span {
-            font-weight: bold;
+            font-weight: 600;
             text-transform: uppercase;
         }
     }
@@ -47,11 +51,11 @@
 
             @media screen and (min-width: $desktop_lg) {
                 &--content {
-                    width: 55%;
+                    width: 60%;
                 }
 
                 &--image {
-                    width: 45%;
+                    width: 40%;
                 }
             }
         }
@@ -63,11 +67,13 @@
         position: relative;
         color: $dgray;
         @media screen and (min-width: $laptop) {
-            padding-right: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.2;
         }
 
         @media screen and (min-width: $desktop_lg) {
             width: 90%;
+            font-size: 1.5rem;
         }
     }
 
@@ -114,6 +120,17 @@
         --swiper-pagination-bullet-inactive-color: #fff;
 
         background: linear-gradient(to right, rgba($lgray, 1) 0%, rgba($lgray, 1) 100%);
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 1.5rem);
+            background: linear-gradient(to top, rgba($black, 0.6) 0%, rgba($black, 0.5) 10%, rgba($black, 0) 100%);
+            bottom: 1.5rem;
+            left: 0;
+
+        }
 
         .swiper-pagination {
             bottom: 0;
@@ -121,6 +138,12 @@
 
         .swiper {
             z-index: 3;
+        }
+
+        .svg-icon {
+            .cls-1 {
+                fill: $white !important;
+            }
         }
 
         &--wrapper {
@@ -192,23 +215,6 @@
             }
         }
 
-        .svg-icon {
-            &--bottom-curve {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                transform: translateY(65%);
-                width: 100%;
-                height: auto;
-
-                @media screen and (min-width: $laptop) {
-                    transform: translateY(80%);
-                }
-
-                .positioner {
-                    position: relative;
-                }
-            }
-        }
+        
     }
 }

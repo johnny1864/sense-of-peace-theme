@@ -36,10 +36,15 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 					<?php endforeach; ?>
 				</div>
 			</div>
-			<div class="testimonials-swiper__nav">
-				<button class="testimonials-swiper__prev" type="button" aria-label="Previous testimonial"></button>
-				<button class="testimonials-swiper__next" type="button" aria-label="Next testimonial"></button>
+			<!-- Arrows -->
+			<div class="swiper-button-prev">
+				<?php echo getSVG('arrow') ?>
 			</div>
+
+			<div class="swiper-button-next">
+				<?php echo getSVG('arrow') ?>
+			</div>
+
 			<div class="swiper-pagination"></div>
 		</div>
 	</div>
@@ -64,12 +69,13 @@ $attr = buildAttr( array( 'id' => $id, 'class' => $classList ) );
 				},
 
 				navigation: {
-					nextEl: wrapper.querySelector('.testimonials-swiper__next'),
-					prevEl: wrapper.querySelector('.testimonials-swiper__prev'),
+					nextEl: wrapper.querySelector('.swiper-button-next'),
+					prevEl: wrapper.querySelector('.swiper-button-prev'),
 				},
 
 				pagination: {
 					el: wrapper.querySelector('.swiper-pagination'),
+					clickable: true
 				}
 			});
 		}, 1000)

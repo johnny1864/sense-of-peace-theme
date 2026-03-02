@@ -11,7 +11,7 @@ $active = (bool) $args['active'] ?? false;
     <button class="accordion__trigger" type="button">
         <?php if ($icon) : ?><div class="accordion__icon"><?php echo $icon; ?></div><?php endif; ?>
         <span class="accordion__label"><?php echo $label; ?></span>
-        <?php echo getSVG('chevron'); ?>
+        <?php echo getSVG('arrow'); ?>
     </button>
     <div class="accordion__content"><?php echo $content; ?></div>
 </div>

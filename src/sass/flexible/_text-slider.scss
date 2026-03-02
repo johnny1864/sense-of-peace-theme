@@ -2,6 +2,11 @@
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-width: $laptop) {
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
     &::before {
         content: '';
         display: block;
@@ -13,9 +18,18 @@
         background: linear-gradient(to top, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
     }
 
+    .section-title {
+        color: $white;
+        margin-bottom: 1em;
+    }
+
     &__box {
         padding: 1.5rem 1rem;
         background-color: rgba($color: $white, $alpha: 0.80);
+        .swiper-pagination {
+            top: unset;
+
+        }
 
         @media screen and (min-width: $laptop) {
             padding: 3rem 2rem;
@@ -28,7 +42,7 @@
 
     &__card {
         width: 90%;
-
+        padding-bottom: 1rem;
         @media screen and (min-width: $laptop) {
             width: 75%;
         }
@@ -38,6 +52,7 @@
         --swiper-theme-color: #f858b2;
         --swiper-pagination-bullet-inactive-color: #f858b2;
         --swiper-pagination-top: 0;
+        --swiper-pagination-bottom: 0;
 
         .swiper-wrapper {
             padding: 1.5rem 0;
@@ -47,5 +62,8 @@
 
     &__bottom-content {
         margin-top: 1.5rem;
+        @media screen and (min-width: $laptop) {
+            margin-top: 2rem;
+        }
     }
 }

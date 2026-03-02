@@ -1,5 +1,5 @@
 .accordion {
-    border-bottom: 1px solid $lgray;
+    border-bottom: 1px solid $white;
 
     &__trigger {
         display: flex;
@@ -8,7 +8,7 @@
         cursor: pointer;
         font-size: $heading_h4__mobile;
         width: 100%;
-        padding: 1rem 0;
+        padding: 1.25rem 0;
         text-align: left;
         background: transparent;
         border: none;
@@ -17,7 +17,7 @@
         .svg-icon {
             margin-left: auto;
             flex: none;
-            transform: rotate(90deg);
+            transition: all 200ms ease;
         }
     }
 
@@ -37,7 +37,7 @@
 
     &.active {
         .svg-icon {
-            transform: rotate(-90deg);
+            transform: rotate(-180deg);
         }
     }
 

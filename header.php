@@ -36,9 +36,30 @@
     <style>
         @font-face {
             font-family: 'Avenir';
+            src: local('Avenir-Roman'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Roman.woff2') format('woff2'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Roman.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Avenir';
             src: local('Avenir'),
-                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir.woff2') format('woff2');
-            font-weight: 300, 400, 500, 600, 700, 900;
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Heavy.woff2') format('woff2'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Heavy.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Avenir';
+            src: local('Avenir'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Heavy.woff2') format('woff2'),
+                url('/wp-content/themes/sense-of-peace-theme/dist/fonts/Avenir-Heavy.woff') format('woff');
+            font-weight: 700;
             font-style: normal;
             font-display: swap;
         }
