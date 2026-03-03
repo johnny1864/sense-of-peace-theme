@@ -15,6 +15,7 @@ select,
 .select-menu,
 .search-input {
     @extend %input;
+    font-weight: normal !important;
 }
 
 select,
