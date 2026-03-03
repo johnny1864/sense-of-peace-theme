@@ -390,6 +390,7 @@ jQuery(document).ready(function ($) {
     var $header = $("header.gheader");
     var $nav = $header.find("nav.global");
     var $adminBar = $("#wpadminbar");
+    
 
     var header_height = $header.innerHeight();
     if ($adminBar.length) {
@@ -402,12 +403,14 @@ jQuery(document).ready(function ($) {
     var BurgerMenu = (function () {
       var $burgerMenu = $header.find(".menu-burger");
       var $text = $burgerMenu.find(".menu-burger__text");
+      var $links = $header.find('.menu-item__link');
 
       function activate() {
         $burgerMenu.addClass("active").attr("title", "Close");
         $text.text("Close");
         $nav.addClass("active");
         $body.addClass("no-scroll");
+        
 
         var styles = { position: "fixed" };
         if ($adminBar.length) {
@@ -443,6 +446,10 @@ jQuery(document).ready(function ($) {
         }
       });
 
+      $links.click(function(){
+        reset();
+      });
+
       return {
         close: reset,
         open: activate,
@@ -453,6 +460,7 @@ jQuery(document).ready(function ($) {
       var $menus = $(".menu");
       var $dropmenus = $menus.find(".menu-item__dropdown");
       var $mobileArrow = $dropmenus.find(".mobile-arrow");
+      
 
       function toggleDropdown(e) {
         e.preventDefault();

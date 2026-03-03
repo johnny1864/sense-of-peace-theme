@@ -83,7 +83,7 @@ $footer_banner = $footer['footer_banner'];
                 </a>
 				<div class="gfooter__copy">
 					<p class="copy">
-						&copy; <?php echo date( "Y" ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.<br>
+						Copyright&copy; <?php echo date( "Y" ); ?> <?php bloginfo( 'name' ); ?><br>
 						| All rights reserved |
 					</p>
 				</div>
