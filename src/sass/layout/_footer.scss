@@ -100,9 +100,7 @@
         overflow: hidden;
     }
 
-    &__copy {
-        font-weight: bold;
-    }
+   
 
     &__bottom {
         padding: 1rem 1.5rem;
@@ -121,6 +119,11 @@
 
         p {
             margin: 0.5rem;
+        }
+
+        .copy {
+            font-weight: bold;
+            color: rgba(168,171,174,1);
         }
 
         .social-links {

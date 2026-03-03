@@ -1,6 +1,10 @@
 .accordion {
     border-bottom: 1px solid $white;
 
+    &:last-of-type {
+        border-bottom: none;
+    }
+
     &__trigger {
         display: flex;
         align-items: center;

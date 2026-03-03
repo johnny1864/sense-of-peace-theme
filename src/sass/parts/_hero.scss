@@ -161,6 +161,7 @@
 
         &-subcontent {
             color: $white;
+            padding-bottom: 1rem;
             @media screen and (min-width: $desktop) {
                 width: 80%;
             }
