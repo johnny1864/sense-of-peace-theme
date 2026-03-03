@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1940.02 372.89">
+  <defs>
+    <style>
+      .banner-cls-1 {
+        fill: url(#banner-linear-gradient);
+      }
+    </style>
+    <linearGradient id="banner-linear-gradient" x1="0" y1="186.45" x2="1940.02" y2="186.45" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#fff"/>
+      <stop offset=".15" stop-color="#fdd9ed"/>
+      <stop offset=".27" stop-color="#fba2d4"/>
+      <stop offset=".37" stop-color="#f979c1"/>
+      <stop offset=".45" stop-color="#f861b6"/>
+      <stop offset=".5" stop-color="#f858b2"/>
+      <stop offset=".55" stop-color="#f85eb4"/>
+      <stop offset=".62" stop-color="#f970bd"/>
+      <stop offset=".71" stop-color="#fa8ecb"/>
+      <stop offset=".8" stop-color="#fcb8de"/>
+      <stop offset=".9" stop-color="#feecf6"/>
+      <stop offset=".93" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <polygon class="banner-cls-1" points="1940.02 292.83 970.01 372.89 0 292.83 0 80.06 970.01 0 1940.02 80.06 1940.02 292.83"/>
+  </g>
+</svg>
